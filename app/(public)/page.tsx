@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { DownloadIcon, ArrowUpRight, MailIcon } from "lucide-react";
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaRegEnvelope } from 'react-icons/fa';
 
 export default function Home() {
     return (
@@ -53,7 +53,7 @@ export default function Home() {
                                     { icon: <FaLinkedin size={28} />, href: "https://linkedin.com", label: "LinkedIn" },
                                     { icon: <FaGithub size={28} />, href: "https://github.com", label: "GitHub" },
                                     { icon: <FaInstagram size={28} />, href: "https://linkedin.com", label: "Instagram" },
-                                    { icon: <MailIcon />, href: "mailto:hello@ankitchaudhary.com", label: "Email" },
+                                    { icon: <FaRegEnvelope size={28} />, href: "mailto:hello@ankitchaudhary.com", label: "Email" },
                                 ].map(({ icon, href, label }) => (
                                     <a
                                         key={label}
@@ -61,7 +61,7 @@ export default function Home() {
                                         aria-label={label}
                                         target={href.startsWith("http") ? "_blank" : undefined}
                                         rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                                        className="w-9 h-9 flex text-zinc-800 items-center justify-center transition-all duration-200 hover:scale-105"
+                                        className="w-9 h-9 flex text-zinc-800 items-center justify-center transition-all duration-300  hover:-translate-y-1"
                                     >
                                         {icon}
                                     </a>
@@ -71,13 +71,13 @@ export default function Home() {
                     </div>
 
                     {/* Photo */}
-                    <div className="flex justify-center md:min-h-[700px] min-h-[500px] relative md:justify-end ">
+                    <div className="flex justify-center md:min-h-[700px] min-h-[620px] relative md:justify-end ">
                         <div className="absolute bottom-0 pointer-events-none select-none">
                             <Image
-                                src="/ankit_hero_image.png"
+                                src="/ankit_chaudhary_hero_image.png"
                                 alt="Ankit Chaudhary"
-                                width={500}
-                                height={600}
+                                width={450}
+                                height={550}
                                 className="width:auto height:auto"
                                 priority
                             />
