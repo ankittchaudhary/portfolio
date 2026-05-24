@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { DownloadIcon, ArrowUpRight, MailIcon } from "lucide-react";
 import { FaGithub, FaInstagram, FaLinkedin, FaRegEnvelope } from 'react-icons/fa';
+import WhatIDo from "@/components/WhatIDo";
+import FeaturedWork from "@/components/FeaturedWork";
 
 export default function Home() {
     return (
@@ -12,7 +14,7 @@ export default function Home() {
                         <p className="uppercase tracking-[3px] text-sm font-medium text-zinc-500">
                             ANKIT CHAUDHARY
                         </p>
-                        <h1 className="text-5xl md:text-6xl font-semibold tracking-tight leading-[1.01] text-zinc-800">
+                        <h1 className="text-6xl md:text-7xl font-semibold tracking-tight leading-[1.01] text-zinc-800">
                             Building digital
                             experiences that<span className="italic font-normal font-serif"> make
                                 an impact. </span>
@@ -89,7 +91,8 @@ export default function Home() {
 
             </section>
 
-            <section className="min-h-dvh bg-red-950"></section>
+            <WhatIDo />
+            <FeaturedWork />
         </div>
     );
 }   
