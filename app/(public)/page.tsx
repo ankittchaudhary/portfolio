@@ -89,7 +89,7 @@ export default function Home() {
 
             </section>
 
-            <section className="min-h-screen bg-red-950"></section>
+            <section className="min-h-dvh bg-red-950"></section>
         </div>
     );
 }   
