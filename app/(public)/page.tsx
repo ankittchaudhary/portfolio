@@ -35,11 +35,11 @@ export default function Home() {
                             </a>
 
                             <a
-                                href="/cv.pdf"
+                                href="/ankit_chaudhary_resume.pdf"
                                 download
                                 className="inline-flex items-center gap-2 text-[#1a1a1a] text-[13.5px] font-medium border-b border-[#1a1a1a]/40 pb-0.5 transition-all duration-200 hover:border-[#1a1a1a] group"
                             >
-                                Download CV
+                                Download Resume
                                 <span className="transition-transform duration-200 group-hover:translate-y-0.5">
                                     <DownloadIcon />
                                 </span>
